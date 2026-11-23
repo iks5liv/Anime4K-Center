@@ -67,3 +67,6 @@ Thumbs.db
 desktop.ini
 *.swp
 *~
+# --- Installer (source is tracked, the built .exe goes to GitHub Releases) ---
+Anime4K_Center_Setup.exe
+Anime4K_Center.ico
