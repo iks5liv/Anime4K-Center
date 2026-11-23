@@ -491,7 +491,8 @@ Anime4K-Center/
 ├── Start_Windows.bat           # Windows launcher (CRLF)
 ├── Start_Linux.sh              # Linux launcher (LF)
 ├── Start_macOS.command         # macOS launcher (LF, double-click)
-├── LICENSE                     # MIT + third-party notices
+├── LICENSE                     # MIT License (project code)
+├── NOTICE                      # Third-party components and their licenses
 ├── README.md
 ├── .gitignore
 ├── .gitattributes
@@ -593,15 +594,18 @@ hdiutil create -volname "Anime4K Center" -srcfolder "dist/Anime4K Center.app" \
 
 | Component | Author / Project | License |
 |---|---|---|
-| mpv | mpv team | GPL-2.0+/LGPL-2.1+ |
+| mpv | mpv team / shinchiro builds | GPL-2.0+/LGPL-2.1+ |
 | Anime4K | bloc97 | MIT |
 | FSRCNNX | igv / community | MIT |
 | yt-dlp | yt-dlp contributors | Unlicense |
 | whisper.cpp | ggml-org | MIT |
-| thumbfast | po5 | MIT |
+| thumbfast | po5 | MPL-2.0 |
 | Magpie | Blinue | MIT |
+| FFmpeg | FFmpeg team | LGPL-2.1+ / GPL-2.0+ |
 
-This project itself is released under the **MIT License** — see [LICENSE](LICENSE).
+The **project code** is released under the **MIT License** — see [LICENSE](LICENSE).
+Third-party components keep their own licenses — the full list with links is in
+[NOTICE](NOTICE).
 
 ---
 
