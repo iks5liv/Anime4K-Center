@@ -10,13 +10,60 @@
 [![mpv](https://img.shields.io/badge/mpv-0.37%2B-691f74?style=flat-square)](https://mpv.io)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
-[![Release](https://img.shields.io/badge/release-v1.0.0-6366f1?style=flat-square)](https://github.com)
+[![Release](https://img.shields.io/badge/release-v1.0.0-6366f1?style=flat-square)](https://github.com/iks5liv/Anime4K-Center/releases)
 
 **Real-time neural upscaling · 6 shader modes · AI subtitles · audio enhancement · multi-source online search**
 
 [Features](#-features) · [Shader Modes](#-1-neural-4k-upscaling--restoration) · [Hotkeys](#-keyboard-shortcuts) · [Install](#-installation) · [Vivaldi](#-browser-integration-magpie--nvidia-vsr--vivaldi) · [Русский](#-русский)
 
 </div>
+
+---
+
+## ⚡ Quick Install (1-Click Setup)
+
+### 🪟 Windows — графический установщик
+
+[![Download Anime4K_Center_Setup.exe](https://img.shields.io/badge/%E2%AC%87_Download-Anime4K_Center_Setup.exe-6366f1?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/iks5liv/Anime4K-Center/releases/latest/download/Anime4K_Center_Setup.exe)
+
+**Download → double-click → Install → ready.** No Python, no command line, no manual unpacking.
+
+| Step | What happens |
+|---|---|
+| 1️⃣ | Choose the folder (default `C:\Anime4K-Center`) and the options you want |
+| 2️⃣ | Click **«Установить в один клик»** |
+| 3️⃣ | The installer downloads the latest sources, `mpv`, `yt-dlp`, `Magpie` and the Whisper model, showing live progress |
+| 4️⃣ | A **Anime4K Center** shortcut appears on your desktop — press **«Запустить сейчас»** and watch |
+
+```text
+Download  →  Run  →  Install  →  Done!
+```
+
+> **SmartScreen:** the executable is not code-signed, so Windows may show
+> “Windows protected your PC”. Click **More info → Run anyway** — or build the
+> installer yourself, see [installer_gui.py](installer_gui.py).
+>
+> The `.exe` is intentionally **not** stored in the repository: it is attached to
+> the [Releases](https://github.com/iks5liv/Anime4K-Center/releases/latest) page.
+
+<img src="docs/installer-windows.png" alt="Anime4K Center Windows installer" width="620">
+
+### 🐧🍎 Linux & macOS — one-line install
+
+```bash
+git clone https://github.com/iks5liv/Anime4K-Center.git && cd Anime4K-Center && python3 setup.py
+```
+
+Then start the app:
+
+```bash
+./Start_Linux.sh          # Linux
+./Start_macOS.command     # macOS (Intel & Apple Silicon M1–M4)
+```
+
+`setup.py` checks `mpv`, `yt-dlp`, `ffmpeg`, `python3-tk` and prints the exact
+package command for your distribution. No root rights are required for the
+project files themselves.
 
 ---
 
@@ -351,6 +398,14 @@ distribution.
 
 ### 🪟 Windows
 
+**Fastest way — the graphical installer:**
+
+1. Download [`Anime4K_Center_Setup.exe`](https://github.com/iks5liv/Anime4K-Center/releases/latest/download/Anime4K_Center_Setup.exe).
+2. Run it, pick a folder, keep the options on, press **«Установить в один клик»**.
+3. Launch from the **Anime4K Center** shortcut on the desktop.
+
+**Manual way (from sources):**
+
 1. Unpack the project into any folder (for example `D:\Anime4K`).
 2. Update components (optional, files are not overwritten unless `--force`):
 
@@ -484,6 +539,7 @@ bypass DRM — protected Kinopoisk/Netflix-style pages show an explanatory messa
 ```text
 Anime4K-Center/
 ├── launcher.py                 # Cross-platform tkinter launcher
+├── installer_gui.py            # Windows one-click GUI installer (source of the .exe)
 ├── launcher.ps1                # Native Windows launcher
 ├── online_parser.ps1           # Search backend for the Windows launcher
 ├── Anime4K_Center.vbs          # Console-free Windows entry point
