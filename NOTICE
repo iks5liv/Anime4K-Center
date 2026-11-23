@@ -1,0 +1,75 @@
+Anime4K Center — third-party components
+=======================================
+
+The MIT License in the LICENSE file applies to the original source code of
+Anime4K Center: launcher.py, launcher.ps1, online_parser.ps1, setup.py,
+Anime4K_Center.vbs, the start scripts, portable_config/input.conf,
+portable_config/mpv.conf, portable_config/scripts/yummy_ui.lua and the
+Anime4K Center documentation.
+
+Anime4K Center bundles, downloads or drives the following third-party
+components. Each of them remains a separate work and keeps its own license.
+Their licenses apply to their own files, not to the Anime4K Center code.
+
+Bundled in this repository
+--------------------------
+
+  * Anime4K shaders (portable_config/shaders/Anime4K_*.glsl)
+    Author:  bloc97 and contributors
+    License: MIT
+    Source:  https://github.com/bloc97/Anime4K
+
+  * FSRCNNX (portable_config/shaders/FSRCNNX_x2_16-0-4-1.glsl)
+    Author:  igv and contributors
+    License: MIT
+    Source:  https://github.com/igv/FSRCNNX
+
+  * thumbfast (portable_config/scripts/thumbfast.lua,
+                portable_config/script-opts/thumbfast.conf)
+    Author:  po5 and contributors
+    License: Mozilla Public License 2.0 (MPL-2.0)
+    Source:  https://github.com/po5/thumbfast
+
+  * mpv configuration and Lua API usage
+    Author:  mpv team and contributors
+    License: GPL-2.0-or-later / LGPL-2.1-or-later
+    Source:  https://github.com/mpv-player/mpv
+
+Downloaded at runtime by setup.py (not stored in this repository)
+-----------------------------------------------------------------
+
+  * mpv (mpv.exe, mpv.com, installers, fonts.conf)
+    Author:  mpv team; Windows builds by shinchiro
+    License: GPL-2.0-or-later / LGPL-2.1-or-later
+    Source:  https://github.com/shinchiro/mpv-winbuild-cmake
+
+  * yt-dlp (yt-dlp.exe)
+    Author:  yt-dlp contributors
+    License: The Unlicense
+    Source:  https://github.com/yt-dlp/yt-dlp
+
+  * whisper.cpp (whisper-cli, ggml-base.bin, CUDA runtime DLLs)
+    Author:  ggml-org and contributors
+    License: MIT
+    Source:  https://github.com/ggml-org/whisper.cpp
+
+  * Magpie (Magpie/ folder, Windows only)
+    Author:  Blinue and contributors
+    License: MIT
+    Source:  https://github.com/Blinue/Magpie
+
+  * FFmpeg (used by mpv, yt-dlp and the AI subtitle wrapper)
+    Author:  FFmpeg team
+    License: LGPL-2.1-or-later / GPL-2.0-or-later depending on the build
+    Source:  https://ffmpeg.org
+
+Service integrations
+--------------------
+
+Anime4K Center searches and plays content from public services (AniLiberty,
+RuTube, YouTube, VK Video, Kick, Twitch, sibnet.ru) through their public APIs
+and through yt-dlp. No content is bundled or redistributed. DRM-protected
+streams are never bypassed; the player reports them and suggests watching in
+a browser.
+
+Trademarks and names belong to their respective owners.
