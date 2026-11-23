@@ -1,0 +1,14 @@
+* text=auto
+
+# Скрипты запуска: Unix — LF, Windows — CRLF.
+*.sh      text eol=lf
+*.command text eol=lf
+*.bat     text eol=crlf
+*.ps1     text eol=crlf
+
+# Исходники и конфиги — LF.
+*.py      text eol=lf
+*.lua     text eol=lf
+*.conf    text eol=lf
+*.md      text eol=lf
+*.json    text eol=lf

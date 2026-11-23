@@ -1,0 +1,69 @@
+# =========================================================
+#  .gitignore — Anime4K Center
+#  В репозитории остаются только исходники, конфиги, шейдеры
+#  и Lua-скрипты. Бинарники, кэш и временные файлы исключены.
+# =========================================================
+
+# --- Windows-бинарники и библиотеки ---
+mpv.exe
+mpv.com
+*.dll
+yt-dlp.exe
+yt-dlp
+whisper-cli.exe
+whisper-cli
+magpie.exe
+Magpie/
+Magpie.exe
+
+# --- Whisper: тяжёлые модели и бинарники ---
+portable_config/whisper/*.exe
+portable_config/whisper/*.bin
+portable_config/whisper/*.gguf
+portable_config/whisper/*.wav
+portable_config/whisper/*.dll
+
+# --- Кэш шейдеров и плеера ---
+portable_config/shader_cache/
+portable_config/cache/
+portable_config/watch_later/
+*.part
+
+# --- Временные плейлисты и состояние онлайн-сессий ---
+temp_playlist*
+portable_config/season_manifest.json
+portable_config/gpu_profile.txt
+
+# --- Логи, отчёты, cookies ---
+*.log
+cookies.txt
+ОТЧЁТ_*.md
+
+# --- Локальные бэкапы и служебные папки ---
+_local_backup/
+backup_opt_*/
+backup_ui_*/
+backup_*/
+installer/
+doc/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+build/
+dist/
+*.spec
+.venv/
+venv/
+
+# --- Архивы и системный мусор ---
+*.7z
+*.zip
+*.tar.gz
+*.tgz
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
