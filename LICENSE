@@ -19,16 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Third-party components keep their own licenses:
-
-  * mpv — GPLv2+/LGPLv2.1+ (https://mpv.io)
-  * Anime4K shaders — MIT (https://github.com/bloc97/Anime4K)
-  * FSRCNNX — MIT (https://github.com/igv/FSRCNNX)
-  * yt-dlp — Unlicense (https://github.com/yt-dlp/yt-dlp)
-  * whisper.cpp — MIT (https://github.com/ggml-org/whisper.cpp)
-  * Magpie — MIT (https://github.com/Blinue/Magpie) — Windows only
-  * thumbfast — MPL-2.0 (https://github.com/po5/thumbfast)
-  * uosc / morden / other Lua scripts — see their headers
